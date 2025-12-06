@@ -110,7 +110,7 @@ a {
   position: absolute;
   inset: 0;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.85), rgba(237, 233, 254, 0.55)),
-    url('https://images.unsplash.com/photo-1582719478296-5fe76d159caa?auto=format&fit=crop&w=2000&q=80')
+    url('https://images.unsplash.com/photo-1544947892-d6d2af87a2ee?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
       center/cover no-repeat;
   opacity: 0.6;
   z-index: 0;
