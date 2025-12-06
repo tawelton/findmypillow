@@ -119,6 +119,10 @@ a {
   position: absolute;
   inset: 0;
   z-index: 0;
+  background:
+    radial-gradient(circle at 18% 22%, rgba(109, 40, 217, 0.18), transparent 46%),
+    linear-gradient(135deg, rgba(109, 40, 217, 0.16), rgba(109, 40, 217, 0.02));
+  pointer-events: none;
 }
 
 .hero-grid {
