@@ -100,6 +100,29 @@ a {
 
 .hero {
   padding: 5rem 0 3.5rem;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(237, 233, 254, 0.6), rgba(255, 255, 255, 0.85));
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.85), rgba(237, 233, 254, 0.55)),
+    url('https://images.unsplash.com/photo-1582719478296-5fe76d159caa?auto=format&fit=crop&w=2000&q=80')
+      center/cover no-repeat;
+  opacity: 0.6;
+  z-index: 0;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 20%, rgba(109, 40, 217, 0.12), transparent 36%),
+    radial-gradient(circle at 80% 10%, rgba(91, 33, 182, 0.08), transparent 30%);
+  z-index: 0;
 }
 
 .hero-grid {
@@ -107,6 +130,8 @@ a {
   gap: 2.8rem;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  position: relative;
+  z-index: 1;
 }
 
 .hero-copy h1 {
